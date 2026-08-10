@@ -33,9 +33,10 @@ for p in players:
 for team, pts in totals.items():
     print(f"{team}: {pts}")
 
-    def is_scorer(p,threshold):
-        return p["points"] > threshold
-    print(is_scorer(players[0], 50))
+def is_scorer(p,threshold):
+    return p["points"] > threshold
+    
+print(is_scorer(players[0], 50))
 
 counter = 0
 for p in players:
